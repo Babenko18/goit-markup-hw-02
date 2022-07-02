@@ -1,5 +1,5 @@
 :root {
-  --black: #000;
+  --black: #212121;
   --blue: #2196f3;
   --white: #fff;
   --grey: #757575;
@@ -18,26 +18,34 @@ body {
 .navigation .current {
   color: var(--blue);
 }
-.logo {
+.header-logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: var(--blue);
+  color: var(--black);
+}
+
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--white);
 }
 
 .buttons-filter .current {
   color: var(--white);
   background: var(--blue);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12); */
 }
-.logo-s {
-  color: var(--black);
+.header-span {
+  color: var(--blue);
 }
 
-.logo-s2 {
-  color: var(--white);
+.footer-span {
+  color: var(--blue);
 }
 
 .navigation > li > a {
@@ -57,8 +65,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
-
-  color: var(--grey);
 }
 
 .contacts .contacts-footer {
@@ -72,7 +78,7 @@ body {
 
 .contacts > li > a:hover,
 .contacts > li > a:focus {
-  color: var(--blue);
+  color: var(--white);
 }
 
 header {
@@ -83,7 +89,7 @@ header {
   background: #2f303a;
 }
 
-.hero-h1 {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -97,6 +103,10 @@ header {
   color: var(--white);
   width: 200px;
   height: 50px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
   background: var(--blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
@@ -117,21 +127,21 @@ header {
   color: var(--white);
 }
 
-.block2 > li > h3 {
+.info > li > h3 {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--black);
 }
-.block2 > li > p {
+.info > li > p {
   line-height: 1.7;
   color: var(--grey);
 }
 
-.section-title {
+.work-title {
   font-size: 36px;
   line-height: 1.16;
-  color: #212121;
+  color: var(--black);
   text-align: center;
 }
 
@@ -139,21 +149,21 @@ header {
   background: #f5f4fa;
 }
 
-.team-card > li {
+.team-list > li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
 }
 
-.team-card > li > h3 {
+.team-list > li > h3 {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
-  color: #212121;
+  color: inherit;
 }
 
-.team-card > li > p {
+.team-list > li > p {
   font-size: 16px;
   line-height: 1.2;
   color: var(--grey);
@@ -174,17 +184,18 @@ header {
   font-weight: 500;
   line-height: 1.6;
   text-align: center;
-  color: #212121;
+  color: var(--black);
   background: #f5f4fa;
   border-radius: 4px;
+  font-family: inherit;
 }
 
 .buttons-filter > li > button:hover,
 .buttons-filter > li > button:focus {
   color: var(--white);
   background: var(--blue);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12); */
 }
 
 a {
@@ -195,7 +206,7 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: inherit;
 }
 
 .portfolio > li > p {
