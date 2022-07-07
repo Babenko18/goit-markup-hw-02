@@ -67,8 +67,22 @@ body {
   font-style: normal;
 }
 
-.contacts .contacts-footer {
+header .contacts .contacts-info {
+  color: #757575;
+}
+
+header .contacts > li > a:hover,
+header .contacts > li > a:focus {
+  color: var(--blue);
+}
+
+footer .contacts .contacts-info {
   color: rgba(255, 255, 255, 0.6);
+}
+
+footer .contacts > li > a:hover,
+footer .contacts > li > a:focus {
+  color: var(--blue);
 }
 
 .adress {
@@ -97,6 +111,13 @@ header {
   text-transform: uppercase;
 
   color: var(--white);
+}
+.h1-hidden {
+  visibility: hidden;
+}
+
+.h2-hidden {
+  visibility: hidden;
 }
 
 .button-hero {
@@ -138,7 +159,7 @@ header {
   color: var(--grey);
 }
 
-.work-title {
+.section-title {
   font-size: 36px;
   line-height: 1.16;
   color: var(--black);
@@ -209,9 +230,24 @@ a {
   color: inherit;
 }
 
-.portfolio > li > p {
+/* .portfolio > li > p {
   font-size: 16px;
   line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--grey);
+} */
+
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--black);
+}
+
+.portfolio-description {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
   color: var(--grey);
 }
 
